@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Разбор массива JSON</h2>
+    <p>
+      Данные, записанные в виде массива JSON, будут преобразованы в массив
+      JavaScript.
+    </p>
+    <p id="demo"></p>
+
+    <script>
+      const text = '[ "Апельсин", "Яблоко", "Груша", "Киви" ]';
+      const myArr = JSON.parse(text);
+      document.getElementById("demo").innerHTML = myArr[0];
+    </script>
+  </body>
+</html>

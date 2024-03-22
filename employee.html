@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Создаём объект из строки JSON</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      let text =
+        '{"employees":[' +
+        '{"firstName":"Иван", "lastName":"Петров"},' +
+        '{"firstName":"Пётр", "lastName":"Сидоров"},' +
+        '{"firstName":"Семён", "lastName":"Иванов"} ]}';
+
+      const obj = JSON.parse(text);
+      document.getElementById("demo").innerHTML =
+        obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+  </body>
+</html>

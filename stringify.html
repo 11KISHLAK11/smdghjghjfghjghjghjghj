@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Создаём строку JSON из объекта JavaScript.</h2>
+    <p id="demo"></p>
+
+    <script>
+      function convertToJSON(obj){
+        let json ={};
+        for(let key in obj) {
+          if (typeof obj[key] === 'string')
+          {json [key] = '''' + obj[key] + '''';}
+          else {
+            json [key] = obj [key];
+          }
+        }
+        
+      }
+    </script>
+  </body>
+</html>
